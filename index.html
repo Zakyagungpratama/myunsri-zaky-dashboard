@@ -1791,155 +1791,44 @@ body.dark .dashboard-detail { background: var(--bg); border-color: var(--border)
 =================================== */
 
 const defaultData = {
-
     profile: {
         name: "Zaky Agung Pratama",
-        nim: "2026XXXXXXXX",
-        birthPlace: "Palembang",
-        birthDate: "2007-01-01",
+        nim: "03041182631014",
+        birthPlace: "Mutar Alam Baru",
+        birthDate: "2008-09-06",
         religion: "Islam",
         gender: "Laki-laki",
         university: "Universitas Sriwijaya",
         faculty: "Fakultas Teknik",
-        study: "Teknik Komputer",
+        study: "Departemen Teknik Elektro",
         year: "2026",
         semester: "1",
-        class: "A",
-        email: "zaky@example.com"
+        class: "Indralaya B/L2",
+        email: "zakyagung868@gmail.com"
     },
-
     schedules: [
-        {
-            id: 1,
-            course: "Kalkulus",
-            lecturer: "Dosen Pengampu",
-            day: "Senin",
-            time: "08:00 - 10:00",
-            room: "Ruang A101",
-            attendance: 90
-        },
-        {
-            id: 2,
-            course: "Dasar Komputer dan Pemrograman",
-            lecturer: "Dosen Pengampu",
-            day: "Selasa",
-            time: "10:00 - 12:00",
-            room: "Lab Komputer",
-            attendance: 100
-        },
-        {
-            id: 3,
-            course: "Fisika Dasar",
-            lecturer: "Dosen Pengampu",
-            day: "Rabu",
-            time: "08:00 - 10:00",
-            room: "Ruang B202",
-            attendance: 85
-        },
-        {
-            id: 4,
-            course: "Bahasa Indonesia",
-            lecturer: "Dosen Pengampu",
-            day: "Kamis",
-            time: "13:00 - 15:00",
-            room: "Ruang A203",
-            attendance: 95
-        },
-        {
-            id: 5,
-            course: "Pengenalan Teknik Komputer",
-            lecturer: "Dosen Pengampu",
-            day: "Jumat",
-            time: "08:00 - 10:00",
-            room: "Ruang C101",
-            attendance: 100
-        }
+        { id: 1, course: "Kalkulus", lecturer: "Ir. Hj. Ike Bayusari, S.T., M.T.", day: "Senin", time: "08:00 - 10:30", room: "Multimedia", attendance: 0 },
+        { id: 2, course: "Fisika Teknik", lecturer: "Ir. Robi Prasetio, S.T., M.T.", day: "Senin", time: "10:30 - 12:30", room: "Multimedia", attendance: 0 },
+        { id: 3, course: "Pancasila", lecturer: "Dr. Amir Syarifudin, M.Hum.", day: "Senin", time: "14:20 - 16:00", room: "MPK-1", attendance: 0 },
+        { id: 4, course: "Pengenalan Bidang Teknik Elektro", lecturer: "Eric Sean Kesuma, S.T., M.T.", day: "Selasa", time: "08:00 - 09:40", room: "E1202", attendance: 0 },
+        { id: 5, course: "Dasar Komputer dan Pemrograman", lecturer: "Dr.Ir. Iwan Pahendra AS,S.T.,M.T.", day: "Selasa", time: "09:40 - 11:20", room: "E1202", attendance: 0 },
+        { id: 6, course: "Keselamatan dan Kesehatan Kerja", lecturer: "Ir. Barlin, S.T., M.Eng., Ph.D.", day: "Selasa", time: "13:00 - 14:20", room: "E1202", attendance: 0 },
+        { id: 7, course: "Bahasa Indonesia", lecturer: "Vitria Marsela, M.Pd", day: "Rabu", time: "08:00 - 09:40", room: "MPK-8", attendance: 0 },
+        { id: 8, course: "Menggambar Teknik", lecturer: "Eric Sean Kesuma, S.T., M.T.", day: "Rabu", time: "10:00 - 12:30", room: "E1202", attendance: 0 },
+        { id: 9, course: "Praktikum Fisika Teknik", lecturer: "Asisten Laboratorium", day: "Kamis", time: "08:00 - 10:00", room: "Laboratorium Dasar Bersama", attendance: 0 }
     ],
-
     tasks: [
-        {
-            id: 1,
-            title: "Laporan Praktikum Pemrograman",
-            course: "Dasar Komputer dan Pemrograman",
-            deadline: "2026-11-27",
-            priority: "Tinggi",
-            done: false
-        },
-        {
-            id: 2,
-            title: "Latihan Soal Kalkulus",
-            course: "Kalkulus",
-            deadline: "2026-11-25",
-            priority: "Sedang",
-            done: false
-        },
-        {
-            id: 3,
-            title: "Membuat Makalah",
-            course: "Bahasa Indonesia",
-            deadline: "2026-11-30",
-            priority: "Rendah",
-            done: false
-        },
-        {
-            id: 4,
-            title: "Tugas Fisika Dasar",
-            course: "Fisika Dasar",
-            deadline: "2026-11-22",
-            priority: "Tinggi",
-            done: false
-        }
+        { id: 1, title: "Proyek Esai 50%–80%", course: "Bahasa Indonesia", deadline: "2026-11-26", priority: "Tinggi", done: false },
+        { id: 2, title: "Tugas P13", course: "Kalkulus", deadline: "2026-11-22", priority: "Tinggi", done: true },
+        { id: 3, title: "Buat Program Berbasis Web", course: "Dasar Komputer dan Pemrograman", deadline: "2026-11-24", priority: "Tinggi", done: true }
     ],
-
     transactions: [
-        {
-            id: 1,
-            type: "income",
-            category: "Uang Saku",
-            description: "Uang saku bulanan",
-            amount: 1500000,
-            date: "2026-11-01"
-        },
-        {
-            id: 2,
-            type: "income",
-            category: "Beasiswa",
-            description: "Bantuan pendidikan",
-            amount: 500000,
-            date: "2026-11-05"
-        },
-        {
-            id: 3,
-            type: "expense",
-            category: "Makanan",
-            description: "Makan sehari-hari",
-            amount: 350000,
-            date: "2026-11-06"
-        },
-        {
-            id: 4,
-            type: "expense",
-            category: "Transportasi",
-            description: "Transportasi kuliah",
-            amount: 150000,
-            date: "2026-11-10"
-        },
-        {
-            id: 5,
-            type: "expense",
-            category: "Keperluan Kuliah",
-            description: "Alat tulis dan buku",
-            amount: 200000,
-            date: "2026-11-12"
-        },
-        {
-            id: 6,
-            type: "expense",
-            category: "Internet",
-            description: "Paket internet",
-            amount: 100000,
-            date: "2026-11-15"
-        }
+        { id: 1, type: "expense", category: "Makanan", description: "Makan", amount: 20000, date: "2026-11-22" },
+        { id: 2, type: "expense", category: "Makanan", description: "17 Hari", amount: 160000, date: "2026-11-21" },
+        { id: 3, type: "expense", category: "Lainnya", description: "Kebutuhan Diri", amount: 200000, date: "2026-11-13" },
+        { id: 4, type: "expense", category: "Internet", description: "Pulsa HP", amount: 100000, date: "2026-11-06" },
+        { id: 5, type: "expense", category: "Lainnya", description: "Token Listrik", amount: 100000, date: "2026-11-04" },
+        { id: 6, type: "income", category: "Uang Saku", description: "Uang Saku Bulanan", amount: 2000000, date: "2026-11-04" }
     ]
 };
 
